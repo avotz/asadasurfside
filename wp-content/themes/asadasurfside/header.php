@@ -27,12 +27,12 @@
 	<div class="header-top">
 		<div class="inner">
 			<div class="text">
-				info@asadasurfside.com
+				<a href="mailto::info@asadasurfside.com">info@asadasurfside.com</a> 
 			</div>
 			<div class="social">
 				<span>Siguenos</span>
 				<a href="https://www.facebook.com/ASADA.Surfside" target="_blank" class="social-item"><i class="fab fa-facebook"></i></a>
-				<a href="#" class="social-item"><i class="fab fa-twitter"></i></a>
+				<!-- <a href="#" class="social-item"><i class="fab fa-twitter"></i></a> -->
 				<!-- <a href="#" class="social-item"><i class="icon-google-plus"></i></a> -->
 				
 			</div>

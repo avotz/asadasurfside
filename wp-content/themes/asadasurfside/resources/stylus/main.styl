@@ -1,7 +1,7 @@
 @import "normalize.styl"
 @import "icons.styl"
 @import "../css/owl.carousel.css"
-
+@import "tables.styl"
 oscuro = #1f9ac7
 verde = #c0c626
 naranja = #FF9800
@@ -56,6 +56,8 @@ textarea
 	padding: .5rem
 textarea
 	height: 90px
+iframe
+	width: 100%
 
 .txt-center
 	text-align center
@@ -151,10 +153,13 @@ textarea
 
 .header
 	text-align center
+	box-shadow: 1px 1px 2px rgba(0,0,0,.25)
 	&-top 
 		background-color oscuro
 		color rgba(255,255,255,0.8)
 		height 42px
+		a
+			color rgba(255,255,255,0.8)
 		
 		
 		.inner
@@ -174,17 +179,17 @@ textarea
 				color rgba(255,255,255,0.8)
 				padding 0 .5rem
 	&-middle
-		padding 1.5rem 0
+		padding .2rem 0
 		overflow hidden
 		border-bottom 1px solid #d0ceca
 	&-logo
 		display block
-		width 80px
+		width 130px
 		img 
 			display block
 	&-contact
 		font-family 'Montserrat'
-		margin-top 1rem
+		margin-top 2rem
 		
 		span
 		i
@@ -261,7 +266,7 @@ textarea
 	background-repeat no-repeat
 	background-position center center
 	overflow hidden
-	height 550px
+	height 600px
 	position relative
 	/*.inner 
 		position relative
@@ -301,7 +306,7 @@ textarea
 	.cotizador
 		position relative
 		width 100%
-		height 550px
+		height 600px
 		background-color oscuro
 		padding 40px 40px
 		color white
@@ -332,12 +337,14 @@ textarea
 				color white 	
 @media screen and (min-width:980px)
 	.banner
+		height 550px
 		.item-info
 			text-align left
 			display block
 		
 		.cotizador
 			width 33.33%
+			height 550px
 			float right
 
 .icons
@@ -422,11 +429,11 @@ textarea
 		position relative
 		&-image
 			position relative
-			height 215px
+			height 450px
 			overflow hidden
 			a 
 				display block
-				height 215px
+				height 450px
 				position relative
 				&:hover
 					.overlay
@@ -593,6 +600,12 @@ textarea
 				position relative
 				z-index 2
 
+.entry-content
+	ul
+		margin-left 45px
+		margin-bottom 1rem
+.main
+	padding: 3rem 0
 .footer
 	&-contact
 		height: 460px;
@@ -705,6 +718,8 @@ textarea
 				padding: 100px 15px 100px 80px;
 		&-map 
 			display block
+			iframe
+				height 100%
 		
 		.right-color
 			display block

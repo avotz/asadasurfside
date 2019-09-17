@@ -34,7 +34,7 @@ get_header();
 	</section>
 	<section class="icons">
 		<div class="inner">
-			<a href="#" class="icons-item">
+			<a href="https://www.cisaweb.com/AcueductosRecibos/" target="_blank" class="icons-item">
 				<div class="icon"><i class="fas fa-edit"></i></div>
 				<span>Consulta Facturas</span>
 </a>
@@ -50,7 +50,7 @@ get_header();
 				</div>
 				<span>Pago Banco Costa Rica</span>
 </a>
-			<a href="#" class="icons-item">
+			<a href="<?php echo esc_url( home_url( '/documentos' ) ); ?>" class="icons-item">
 				<div class="icon"><i class="fas fa-user"></i></div>
 				<span>Documentos</span>
 </a>
@@ -61,69 +61,66 @@ get_header();
                 
             <h1 class="properties-title txt-center">Información Destacada</h1>
             <div id="properties-slider" class="owl-carousel owl-theme">
-               
-                    <div class="properties-slider-item">
-                    	<div class="properties-slider-item-image">
-                    		 <a href="#" class="properties-slider-item-link">
-	                            <img src="<?php echo get_template_directory_uri(); ?>/img/forms.jpg" alt="item" />
-	                            <div class="overlay">
-	                            	<div class="icon">
-	                            		<i class="fas fa-plus"></i>
-	                            	</div>
-	                            </div>
-	                         </a>
-                    	</div>
-                    	<div class="properties-slider-item-details">
-                    		<h4>Lorem ipsum dolor sit amet</h4>
-	                        <h3>Formularios</h3>  
-	                        <!-- <p>75 Anzac Avenue, Auckland Central</p> -->
+					<?php	
+						$args = array(
+						'post_type' => 'provider',
+						//'order' => 'ASC',
+						'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
+						'posts_per_page' => 6,
+						'paged' => 1
+					
+					);
+      
 
-                    	</div>
-                       
-                        
-                    </div>
-                    <div class="properties-slider-item">
-                    	<div class="properties-slider-item-image">
-                    		 <a href="#" class="properties-slider-item-link">
-	                            <img src="<?php echo get_template_directory_uri(); ?>/img/documentos.jpg" alt="item" />
-	                            <div class="overlay">
-	                            	<div class="icon">
-	                            		<i class="fas fa-plus"></i>
-	                            	</div>
-	                            </div>
-	                         </a>
-                    	</div>
-                    	<div class="properties-slider-item-details">
-                    		<h4>Lorem ipsum dolor sit amet</h4>
-	                        <h3>Documentos</h3>  
-	                        
+					$items = new WP_Query($args);
+					// Pagination fix
+					$temp_query = $wp_query;
+					$wp_query   = NULL;
+					$wp_query   = $items;
 
-                    	</div>
-                       
-                        
-                    </div>
-                    <div class="properties-slider-item">
-                    	<div class="properties-slider-item-image">
-                    		 <a href="#" class="properties-slider-item-link">
-	                            <img src="<?php echo get_template_directory_uri(); ?>/img/informes.jpg" alt="item" />
-	                            <div class="overlay">
-	                            	<div class="icon">
-	                            		<i class="fas fa-plus"></i>
-	                            	</div>
-	                            </div>
-	                         </a>
-                    	</div>
-                    	<div class="properties-slider-item-details">
-                    		<h4>Lorem ipsum dolor sit amet</h4>
-	                        <h3>Informes</h3>  
-	                       
+						if ($items->have_posts()) {
+							while ($items->have_posts()) {
+								$items->the_post();
 
-                    	</div>
-                       
-                        
-                    </div>
-                   
-               
+								?>
+								<div class="properties-slider-item">
+									<div class="properties-slider-item-image">
+										
+										<a href="<?php echo rwmb_meta( 'rw_provider_link' );?>" target="_blank" class="properties-slider-item-link">
+											<?php if (has_post_thumbnail()) :
+
+											$id = get_post_thumbnail_id($post->ID);
+											$thumb_url = wp_get_attachment_image_src($id, 'item-provider-thumb', true);
+											?>
+
+											<?php endif; ?>
+											<img src="<?php echo $thumb_url[0] ?>" alt="<?php the_title(); ?>" />
+											<div class="overlay">
+												<div class="icon">
+													<i class="fas fa-plus"></i>
+												</div>
+											</div>
+										</a>
+									</div>
+									<!-- <div class="properties-slider-item-details">
+										<h4>Lorem ipsum dolor sit amet</h4>
+										<h3>Formularios</h3>  
+										
+									</div> -->
+								
+									
+								</div>
+								
+								
+							
+
+							<?php
+
+
+						}
+                    }
+                    wp_reset_postdata();
+					?>
 
             </div>
 

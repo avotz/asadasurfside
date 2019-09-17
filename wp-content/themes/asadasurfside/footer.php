@@ -13,7 +13,7 @@
 <footer class="footer">
 		<div class="footer-contact">
 			<div class="footer-map">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/map.png" alt="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15694.781033199757!2d-85.7649106!3d10.4457391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb323e80f88ea5c3f!2sSurfside%20Asada!5e0!3m2!1ses-419!2scr!4v1568755364204!5m2!1ses-419!2scr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 			</div>
 			<div class="right-color"></div>
 			<div class="inner">
@@ -36,8 +36,8 @@
 				
 				<div class="social">
 					<a href="https://www.facebook.com/ASADA.Surfside" target="_blank" class="social-item"><i class="fab fa-facebook"></i></a>
-					<a href="#" class="social-item"><i class="fab fa-twitter"></i></a>
-					<a href="#" class="social-item"><i class="fab fa-google-plus"></i></a>
+					<!-- <a href="#" class="social-item"><i class="fab fa-twitter"></i></a>
+					<a href="#" class="social-item"><i class="fab fa-google-plus"></i></a> -->
 	
 				</div>
 			</div>

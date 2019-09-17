@@ -44,6 +44,7 @@ if ( ! function_exists( 'asadasurfside_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 		add_image_size('item-banner', 1920, 1080, true);
 		add_image_size('item-featured-thumb', 309, 232, true);
+		add_image_size('item-provider-thumb', 390, 450, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -184,4 +185,9 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Custom Post Type.
+ */
+require get_template_directory() . '/inc/cpt.php';
 

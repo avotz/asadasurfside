@@ -38,13 +38,13 @@ get_header();
 				<div class="icon"><i class="fas fa-edit"></i></div>
 				<span>Consulta Facturas</span>
 </a>
-			<a href="#" class="icons-item">
+			<a href="https://www.bnonline.fi.cr/Login/" class="icons-item">
 				<div class="icon">
 					<i class="fas fa-credit-card"></i>
 				</div>
 				<span>Pago Banco Nacional</span>
 </a>
-			<a href="#" class="icons-item">
+			<a href="http://bancobcr.com/" class="icons-item">
 				<div class="icon">
 					<i class="fas fa-dollar-sign"></i>
 				</div>

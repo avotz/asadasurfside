@@ -196,8 +196,8 @@ iframe
 		svg
 			font-size 1.5rem
 		a 
-			padding-left 1rem
-			color #c4c2bc
+			//padding-left 1rem
+			color #000
 	&-menu
 		display none
 		position absolute
@@ -210,6 +210,7 @@ iframe
 		&-item
 		li
 			display block
+			position relative
 		&-link
 		a
 			display block
@@ -217,6 +218,15 @@ iframe
 			color white
 			font-family 'Montserrat'
 			text-transform uppercase
+		.sub-menu
+			display none
+			position relative
+			z-index 200
+			background-color oscuro
+			width 100%
+			a
+				padding .5rem 0
+				
 	&-btn-menu
 		background-color oscuro
 		position absolute
@@ -258,6 +268,16 @@ iframe
 				&:hover
 					background-color oscuro
 					color white
+			.sub-menu
+				position absolute
+				background-color white
+				border-bottom 1px solid rgba(#000, .2)
+				border-left 1px solid rgba(#000, .2)
+				border-right 1px solid rgba(#000, .2)
+				li 
+					display block
+		
+			
 		
 		&-btn-menu
 			display none

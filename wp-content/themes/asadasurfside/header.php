@@ -32,7 +32,7 @@
 			<div class="social">
 				<span>Siguenos</span>
 				<a href="https://www.facebook.com/ASADA.Surfside" target="_blank" class="social-item"><i class="fab fa-facebook"></i></a>
-				<!-- <a href="#" class="social-item"><i class="fab fa-twitter"></i></a> -->
+				<a href="https://wa.me/50686026012" target="_blank" class="social-item"><i class="fab fa-whatsapp"></i></a>
 				<!-- <a href="#" class="social-item"><i class="icon-google-plus"></i></a> -->
 				
 			</div>
@@ -42,7 +42,8 @@
 		<div class="inner">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo"></a>
 			<div class="header-contact">
-				Llamenos <span>(506) 8602-6019</span> <a href="mailto::info@asadasurfside.com"><i class="fas fa-envelope"></i></a>
+				Llamenos <span>(506) 8602-6019</span>  <br> <!--<a href="mailto::info@asadasurfside.com"><i class="fas fa-envelope"></i></a>-->
+				<a href="mailto::info@asadasurfside.com">info@asadasurfside.com</a>
 			</div>
 		</div>
 	</div>

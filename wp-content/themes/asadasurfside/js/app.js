@@ -14300,16 +14300,19 @@ return jQuery;
 
 /* WEBPACK VAR INJECTION */(function($, jQuery) {__webpack_require__(/*! ./config.js */ "./resources/js/config.js");
 
+var hoverintent = __webpack_require__(/*! hoverintent */ "./node_modules/hoverintent/index.js");
+
 $(document).ready(function () {
   // select fancy
   [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function (el) {
     new SelectFx(el);
   });
   var $btnMenu = $('#btn-menu'),
-      $menu = document.querySelectorAll('.menu .menu-item-has-children'); //new WOW().init();
+      $headerMenu = $('.header-menu'),
+      $menu = document.querySelectorAll('.header-menu .menu-item-has-children'); //new WOW().init();
 
   $btnMenu.on('click', function (e) {
-    $menu.toggle();
+    $headerMenu.toggle();
   });
   $menu.forEach(function (element) {
     hoverintent(element, function () {
@@ -14446,8 +14449,6 @@ __webpack_require__(/*! ./vendor/jquery.magnific-popup.min.js */ "./resources/js
 
 
 
-
-var hoverintent = __webpack_require__(/*! hoverintent */ "./node_modules/hoverintent/index.js");
 
 /***/ }),
 

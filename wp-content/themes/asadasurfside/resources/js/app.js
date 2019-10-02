@@ -1,6 +1,8 @@
 
 require('./config.js');
 
+const hoverintent = require('hoverintent');
+
 $( document ).ready(function() {
 
   // select fancy
@@ -9,13 +11,14 @@ $( document ).ready(function() {
       } );
 
   var $btnMenu = $('#btn-menu'),
-    $menu = document.querySelectorAll('.menu .menu-item-has-children');
+    $headerMenu = $('.header-menu'),
+    $menu = document.querySelectorAll('.header-menu .menu-item-has-children');
   
   //new WOW().init();
 
   $btnMenu.on('click', function (e) {
     
-      $menu.toggle();
+      $headerMenu.toggle();
 
   });
 

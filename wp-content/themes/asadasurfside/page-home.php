@@ -21,7 +21,7 @@ get_header();
 				<div class="banner-overlay"></div>	
 	  	  		<div class="item-info txt-center">
 	  	  			<h1>Asociación Administradora del Acueducto y Alcantarillado de Playa Potrero</h1>
-	  	  			<p>ASADA Surfside</p>
+	  	  			<p>-Surfside-Santa Cruz</p>
 	  	  			
 	  	  		</div>
 	  	  		<div class="cotizador">
@@ -139,8 +139,8 @@ get_header();
             <?php	
 						$args = array(
 						'post_type' => 'post',
-						//'order' => 'ASC',
-						'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
+						//'order' => 'DESC',
+						'orderby' => array('menu_order' => 'DESC', 'title' => 'DESC'),
 						'posts_per_page' => 3,
 						'paged' => 1
 					

@@ -36,7 +36,7 @@
 				
 				<div class="social">
 					<a href="https://www.facebook.com/ASADA.Surfside" target="_blank" class="social-item"><i class="fab fa-facebook"></i></a>
-					<a href="https://wa.me/50686026012" target="_blank" class="social-item"><i class="fab fa-whatsapp"></i></a>
+					<a href="https://wa.me/50686026019" target="_blank" class="social-item"><i class="fab fa-whatsapp"></i></a>
 					<!-- <a href="#" class="social-item"><i class="fab fa-google-plus"></i></a> -->
 	
 				</div>

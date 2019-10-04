@@ -27,7 +27,7 @@
 	<div class="header-top">
 		<div class="inner">
 			<div class="text">
-				<a href="mailto::info@asadasurfside.com">info@asadasurfside.com</a> 
+				<span>Lun-Vier de 8am a 4pm</span> 
 			</div>
 			<div class="social">
 				<span>Siguenos</span>
@@ -42,7 +42,7 @@
 		<div class="inner">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo"></a>
 			<div class="header-contact">
-				Llamenos <span>(506) 8602-6019</span>  <br> <!--<a href="mailto::info@asadasurfside.com"><i class="fas fa-envelope"></i></a>-->
+				<span>(506) 8602-6019</span>  <br> <!--<a href="mailto::info@asadasurfside.com"><i class="fas fa-envelope"></i></a>-->
 				<a href="mailto::info@asadasurfside.com">info@asadasurfside.com</a>
 			</div>
 		</div>

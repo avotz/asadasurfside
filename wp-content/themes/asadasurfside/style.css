@@ -1090,14 +1090,18 @@ iframe {
   height: 600px;
   position: relative;
 /*.inner 
-		position relative
-	.item
-		background-size cover
-		background-repeat no-repeat
-		background-position center center
-		overflow hidden
-		height 550px
-		width 100% */
+		position relative*/
+}
+.banner #home-slider {
+  position: absolute;
+}
+.banner .home-slider-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
 }
 .banner-overlay {
   position: absolute;
@@ -1108,6 +1112,7 @@ iframe {
   background-repeat: none;
   background-position: left top;
   width: 1675px;
+  z-index: 2;
 }
 .banner .item-info {
   float: left;
@@ -1116,6 +1121,7 @@ iframe {
   color: #fff;
   position: relative;
   display: none;
+  z-index: 2;
 }
 .banner .item-info h1 {
   color: #fff;
@@ -1169,6 +1175,9 @@ iframe {
 }
 @media screen and (min-width: 980px) {
   .banner {
+    height: 550px;
+  }
+  .banner .home-slider-item {
     height: 550px;
   }
   .banner .item-info {

@@ -14323,22 +14323,26 @@ $(document).ready(function () {
       timeout: 200,
       interval: 50
     });
-  }); //  $("#slider").owlCarousel({
-  //       items : 1,
-  //       autoplay : true,
-  //       loop : true,
-  //       nav : true,
-  //       navText : ['','']
-  //       /*onChange : function (e) {
-  //         console.log(e.target);
-  //         $('.owl-item.active span').addClass('animated');
-  //         $('.owl-item.active h1').addClass('animated');
-  //       }*/
-  //       /*slideSpeed : 300,
-  //       paginationSpeed : 400,*/
-  //       /*singleItem:true*/
-  //  });
+  });
+  $("#home-slider").owlCarousel({
+    items: 1,
+    autoplay: true,
+    loop: true,
+    nav: false,
+    dots: false //navText : ['','']
 
+    /*onChange : function (e) {
+      console.log(e.target);
+      $('.owl-item.active span').addClass('animated');
+      $('.owl-item.active h1').addClass('animated');
+    }*/
+
+    /*slideSpeed : 300,
+    paginationSpeed : 400,*/
+
+    /*singleItem:true*/
+
+  });
   $("#properties-slider").owlCarousel({
     center: true,
     mouseDrag: true,

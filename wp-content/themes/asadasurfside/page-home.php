@@ -15,13 +15,23 @@
 get_header();
 ?>
 
-<section class="banner" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/02-acueductos.jpg');">
+<section class="banner" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner1.jpg');">
 		<!--<div class="banner-overlay"></div>-->	
+		<div id="home-slider" class="owl-carousel owl-theme">
+			<div class="home-slider-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner1.jpg');">
+			</div>
+			<div class="home-slider-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner2.jpg');">
+			</div>
+			<div class="home-slider-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner3.jpg');">
+			</div>
+			<div class="home-slider-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner4.jpg');">
+			</div>
+		</div>
 		<div class="inner">
 				<div class="banner-overlay"></div>	
 	  	  		<div class="item-info txt-center">
-	  	  			<h1>Asociación Administradora del Acueducto y Alcantarillado de Playa Potrero</h1>
-	  	  			<p>-Surfside-Santa Cruz</p>
+	  	  			<h1>Asociación Administradora del Acueducto y Alcantarillado de Playa Potrero -Surfside-Santa Cruz</h1>
+	  	  			<!-- <p></p> -->
 	  	  			
 	  	  		</div>
 	  	  		<div class="cotizador">

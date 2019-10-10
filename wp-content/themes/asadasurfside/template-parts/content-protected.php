@@ -109,7 +109,7 @@ if( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action'] ) &&  $_POS
     ?>
     <form action="" class="post-medidor-form" method="post">
         <p>Para ver la información ingresa el numero de medidor:</p>
-        <p><label for="post_medidor">Numero de Medidor: <input name="post_medidor" id="post_medidor" type="text" value="<?php echo isset($medidor) ? $medidor : '' ?>"></label> <input type="submit" name="Submit" value="Consultar"></p>
+        <p><label for="post_medidor">Numero de Medidor: <input name="post_medidor" id="post_medidor" type="text" value="<?php echo isset($medidor) ? $medidor : '' ?>"></label> <input type="submit" name="Submit" value="Consultar" class="btn"></p>
             <input type="hidden" name="action" value="query_medidor" />
             <?php wp_nonce_field( 'query-medidor' ); ?>
         </form>

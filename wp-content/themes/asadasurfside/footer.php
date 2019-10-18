@@ -32,7 +32,7 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="inner">
-				<h3>Siguenos</h3>
+				<h3><?php pll_e('Siguenos'); ?></h3>
 				
 				<div class="social">
 					<a href="https://www.facebook.com/ASADA.Surfside" target="_blank" class="social-item"><i class="fab fa-facebook"></i></a>
@@ -45,7 +45,7 @@
 		<div class="copy">
 			<div class="inner">
 				
-				Asada Surftside &copy; <?php echo date('Y') ?>. <span class="avotz">Desarrollado por <a href="#"><i class="icon-avotz"></i></a></span>
+				Asada Surftside &copy; <?php echo date('Y') ?>. <span class="avotz"><?php pll_e('Desarrollado'); ?> <a href="#"><i class="icon-avotz"></i></a></span>
 			</div>
 		</div>
 		

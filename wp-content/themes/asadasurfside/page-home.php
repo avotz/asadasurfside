@@ -30,7 +30,7 @@ get_header();
 		<div class="inner">
 				<div class="banner-overlay"></div>	
 	  	  		<div class="item-info txt-center">
-	  	  			<h1>Asociación Administradora del Acueducto y Alcantarillado de Playa Potrero -Surfside-Santa Cruz</h1>
+	  	  			<h1><?php pll_e('Banner Texto'); ?></h1>
 	  	  			<!-- <p></p> -->
 	  	  			
 	  	  		</div>
@@ -46,30 +46,30 @@ get_header();
 		<div class="inner">
 			<a href="https://www.cisaweb.com/AcueductosRecibos/" target="_blank" class="icons-item">
 				<div class="icon"><i class="fas fa-edit"></i></div>
-				<span>Consulta Facturas</span>
+				<span><?php pll_e('Consulta Facturas'); ?></span>
 </a>
 			<a href="https://www.bnonline.fi.cr/Login/" target="_blank" class="icons-item">
 				<div class="icon">
 					<i class="fas fa-credit-card"></i>
 				</div>
-				<span>Pago Banco Nacional</span>
+				<span><?php pll_e('Pago Banco Nacional'); ?></span>
 </a>
 			<a href="http://bancobcr.com/" target="_blank" class="icons-item">
 				<div class="icon">
 					<i class="fas fa-dollar-sign"></i>
 				</div>
-				<span>Pago Banco Costa Rica</span>
+				<span><?php pll_e('Pago Banco Costa Rica'); ?></span>
 </a>
 			<a href="<?php echo esc_url( home_url( '/documentos' ) ); ?>" class="icons-item">
 				<div class="icon"><i class="fas fa-user"></i></div>
-				<span>Documentos</span>
+				<span><?php pll_e('Documentos'); ?></span>
 </a>
 			
 		</div>
 	</section>
 	<section class="properties">
                 
-            <h1 class="properties-title txt-center">Información Destacada</h1>
+            <h1 class="properties-title txt-center"><?php pll_e('Información'); ?></h1>
             <div id="properties-slider" class="owl-carousel owl-theme">
 					<?php	
 						$args = array(
@@ -144,7 +144,7 @@ get_header();
 	</section>
 	<section id="latest-news" class="latest-news">
 		<div class="inner">
-			<h1 class="latest-news-title txt-center">Ultimas Noticias</h1>
+			<h1 class="latest-news-title txt-center"><?php pll_e('Ultimas Noticias'); ?></h1>
 			<div class="latest-news-container">
             <?php	
 						$args = array(
@@ -190,7 +190,7 @@ get_header();
                                                 <div class="metadata"></div>
                                                 <div class="bodytext"><?php the_excerpt(); ?></div>
                                             </a>
-                                            <a href="<?php the_permalink(); ?>" class="readmore">Leer más</a>
+                                            <a href="<?php the_permalink(); ?>" class="readmore"><?php pll_e('Leer más'); ?></a>
                                         </div>
                                     </div>	
                                 </article>

@@ -27,10 +27,13 @@
 	<div class="header-top">
 		<div class="inner">
 			<div class="text">
-				<span>Lun-Vier de 8am a 4pm</span> 
+				<span><?php pll_e('Horario'); ?></span> 
 			</div>
 			<div class="social">
-				<span>Siguenos</span>
+				<div class="language">
+					<a href="<?php echo esc_url( home_url( '/inicio' ) ); ?>">ES</a> | <a href="<?php echo esc_url( home_url( '/en' ) ); ?>">EN</a>
+				</div>
+				<span><?php pll_e('Siguenos'); ?></span>
 				<a href="https://www.facebook.com/ASADA.Surfside" target="_blank" class="social-item"><i class="fab fa-facebook"></i></a>
 				<a href="https://wa.me/50686026019" target="_blank" class="social-item"><i class="fab fa-whatsapp"></i></a>
 				<!-- <a href="#" class="social-item"><i class="icon-google-plus"></i></a> -->

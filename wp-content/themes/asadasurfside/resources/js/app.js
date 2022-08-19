@@ -80,15 +80,15 @@ $( document ).ready(function() {
                   items:3,
                   
               },
-              1368:{
-                  items:4,
+            //   1368:{
+            //       items:4,
                   
                   
-              },
-              1680:{
-                  items:4,
+            //   },
+            //   1680:{
+            //       items:4,
                  
-              }
+            //   }
           }
          
      });

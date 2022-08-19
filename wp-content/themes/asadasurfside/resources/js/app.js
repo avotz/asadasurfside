@@ -76,10 +76,10 @@ $( document ).ready(function() {
                   items:2,
                   
               },
-              1024:{
-                  items:3,
+            //   1024:{
+            //       items:3,
                   
-              },
+            //   },
             //   1368:{
             //       items:4,
                   

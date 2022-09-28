@@ -151,7 +151,7 @@ get_header();
 						'post_type' => 'post',
 						//'order' => 'DESC',
 						//'lang' => '', // use language slug in the query
-						'orderby' => array('menu_order' => 'DESC', 'title' => 'DESC'),
+						'orderby' => array('menu_order' => 'DESC', 'date' => 'DESC'),
 						'posts_per_page' => 3,
 						'paged' => 1
 					
